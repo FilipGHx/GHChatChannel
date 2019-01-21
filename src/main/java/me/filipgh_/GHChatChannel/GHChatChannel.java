@@ -70,14 +70,16 @@ public class GHChatChannel extends JavaPlugin implements Listener {
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String commandLabel, String[] args) {
-        Player p = (Player) sender;
+    public boolean onCommand(CommandSender sender, Command command, String commandLabel, String[] args){
+            Player p = (Player) sender;
 
-        if (commandLabel.equalsIgnoreCase("")){
+            if (commandLabel.equalsIgnoreCase("")) {
+
+            }
+
+            return false;
 
         }
-
-        return false;
 
     }
 

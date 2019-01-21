@@ -15,12 +15,12 @@ public class PacketUtils {
 		connection.sendPacket(subtitlePacket);
 	}
 
-	public static void sendTabHF(Player player, String header, String footer){
+	public static void sendTabHF(Player player, String header, String footer) {
 
 		CraftPlayer craftplayer = (CraftPlayer) player;
 		PlayerConnection connection = craftplayer.getHandle().playerConnection;
-		IChatBaseComponent headerJSON = ChatSerializer.a("{\"text\": \"" + header +"\"}");
-		IChatBaseComponent footerJSON = ChatSerializer.a("{\"text\": \"" + footer +"\"}");
+		IChatBaseComponent headerJSON = ChatSerializer.a("{\"text\": \"" + header + "\"}");
+		IChatBaseComponent footerJSON = ChatSerializer.a("{\"text\": \"" + footer + "\"}");
 		PacketPlayOutPlayerListHeaderFooter packet = new PacketPlayOutPlayerListHeaderFooter();
 
 		try {
