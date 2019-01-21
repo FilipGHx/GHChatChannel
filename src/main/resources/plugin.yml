@@ -1,0 +1,5 @@
+name: GHChatChannel
+version: 1.0
+main: me.filipgh_.GHChatChannel.GHChatChannel
+author: filipgh_
+description: Switch from different chat channels!
